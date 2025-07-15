@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Audio Visualiser</title>
+    <style>
+      canvas {
+        width: 100%;
+        height: 95%;
+        display: block;
+        position: absolute;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="audio">Select an audio file:</label>
+    <input type="file" accept="audio/*" id="audio" title="Choose an audio file to visualise" placeholder="Choose audio file" />
+    <canvas id="canvas"></canvas>
+
+    <script src="index.js"></script>
+  </body>
+</html>
