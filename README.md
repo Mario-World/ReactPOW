@@ -1,4 +1,4 @@
-# ReactPOW
+# React POW {Proof Of Work}
 
 A collection of React projects and experiments. This folder contains multiple standalone React apps, each demonstrating different features, libraries, or UI concepts.
 
