@@ -1,12 +1,57 @@
-# React + Vite
+# i18next React Example
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React app demonstrating internationalization (i18n) using [i18next](https://www.i18next.com/) and [react-i18next](https://react.i18next.com/). This project supports multiple languages, automatic language detection, and dynamic translation loading.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Language switching with a UI selector
+- Automatic browser language detection
+- Dynamic loading of translation files
+- Pluralization and variable interpolation
+- Component-based translations with `<Trans />`
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- i18next
+- react-i18next
+- i18next-browser-languagedetector
+- i18next-http-backend
+
+## Getting Started
+
+### 1. Install dependencies
+
+```sh
+npm install
+```
+
+### 2. Run the app
+
+```sh
+npm run dev
+```
+
+### 3. Open in your browser
+
+Visit [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal).
+
+## Project Structure
+
+- `src/i18n.js` – i18next configuration
+- `src/App.jsx` – Main app component using translations
+- `src/components/LanguageSelector.jsx` – Language switcher UI
+- `public/locales/en/translation.json` – English translations
+- `public/locales/hi/translation.json` – Hindi translations
+
+## Example Translation File
+
+**public/locales/en/translation.json**
+```json
+{
+  "greeting": "Hello!",
+  "description": {
+    "line1": "Welcome to <1>{{channel}}</1> channel.",
+    "line2": "Enjoy learning!"
+  }
+}
